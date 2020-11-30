@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Goldman', cursive;
+    user-select: none;
+}
+
+.align-content {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chronometer-container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: #1F3B4D;
+    color: white;
+}
+
+.circle-effect {
+    padding: 20px;
+    border-radius: 30px;
+    border: 2px solid #D0FEFE;
+
+    display: flex;
+}
+
+.minutes, .seconds {
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.align-buttons {
+    width: 100%;
+    margin-top: 80px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.align-buttons button,
+#closeNotification {
+    width: 80px;
+    padding: 6px;
+    margin: 0 4px;
+
+    border: none;
+    border-radius: 6px;
+    background-color: #017374;
+
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    outline: none;
+    color: white;
+    cursor: pointer;
+    transition: background .4s;
+}
+
+.align-buttons button:hover {
+    background-color: #025c5e;
+}
+
+#sound {
+    display: none;
+}
+
+#stopSound {
+    display: none;
+}
+
+.align-notification {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.align-notification div {
+    width: 80%;
+    padding: 10px;
+    border-radius: 20px;
+
+    position: absolute;
+    top: -90px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background-color: #0172745d;
+    transition: .4s;
+    color: white;
+}
+
+#closeNotification:hover {
+    background-color: #03898c;
+}
+
+.show-notification {
+    top: 30px !important;
+}
