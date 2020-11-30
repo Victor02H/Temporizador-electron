@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporizador</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="align-content">
+        <div class="chronometer-container">
+
+            <div class="circle-effect">
+                <div id="minutes" class="minutes"></div>
+                <div id="seconds" class="seconds"></div>
+            </div>
+
+            <div class="align-buttons">
+                <button id="startBtn" class="start">Iniciar</button>
+                <button id="moreMinutes">M+</button>
+                <button id="lessMinutes">M-</button>
+                <button id="moreSeconds">S+</button>
+                <button id="lessSeconds">S-</button>
+                <button id="reset">Resetar</button>
+            </div>
+
+            <div class="align-notification">
+
+                <div id="notificationDisableSound"> <!-- show-notification -->
+                    <h2>Acabou o tempo!</h2>
+                    <button id="closeNotification">OK</button>
+                </div>
+        
+            </div>
+
+            <audio src="sound/alarm.mp3" id="sound"></audio>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="js/notification.js"></script>
+</body>
+
+</html>
